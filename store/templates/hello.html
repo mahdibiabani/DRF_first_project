@@ -1,0 +1,12 @@
+<html>
+    <body>
+        {% comment %} {% for order in orders %}
+            <h3>{{ order.id }} {{ order.customer.first_name}}  </h3>
+            {% for item in order.items.all %}
+                {{ item.quantity }}  {{ item.product.name }}
+
+            {% endfor %}
+            <p>--------------</p>
+        {% endfor %} {% endcomment %}
+    </body>
+</html>
